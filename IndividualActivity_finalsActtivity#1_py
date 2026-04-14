@@ -1,0 +1,32 @@
+#  LIST OPERATIONS
+print("--- List ---")
+my_list = ["apple", "banana", "cherry"]
+my_list.append("dragonfruit") 
+my_list.pop(0)
+my_list.sort() 
+print("Final List:", my_list)
+
+#TUPLE OPERATIONS
+print("\n--- Tuple ---")
+my_tuple = (10, 20, 30)
+print("Original Tuple:", my_tuple)
+try:
+    my_tuple[0] = 99
+except TypeError as e:
+    # Explain what happens
+    print(f"Error: {e}")
+    print("Explanation: Tuples are 'immutable', meaning they cannot be changed after they are created.")
+
+# SET OPERATIONS 
+print("\n--- Set ---")
+my_set = {1, 2, 3, 4}
+my_set.add(5)
+my_set.remove(2)  
+print("Updated Set:", my_set) 
+
+# DICTIONARY OPERATIONS
+print("\n--- Dictionary ---")
+my_dict = {"name": "Alex", "age": 20}
+my_dict["grade"] = "A" 
+my_dict["age"] = 21
+print("All Keys:", list(my_dict.keys())) 
