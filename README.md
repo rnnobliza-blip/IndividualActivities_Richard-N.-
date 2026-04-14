@@ -1,0 +1,1 @@
+# IndividualActivities_Richard-N.-
