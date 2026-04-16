@@ -1,0 +1,53 @@
+# Re-declare variables from Part 1
+fruits = ("apple", "banana", "mango", "grapes", "orange")
+tasks = ["wake up", "eat breakfast", "study", "exercise", "sleep"]
+numbers = [1, 2, 2, 3, 4, 4, 5]
+unique_numbers = set(numbers)
+student = {
+    "name": "Richard Nobliza",
+    "age": 19,
+    "course": "BSIT"
+}
+
+# LIST TASKS
+print("\n--- List Tasks ---")
+tasks.append("do homework")
+print("After adding:", tasks)
+
+tasks.remove("exercise")
+print("After removing:", tasks)
+
+tasks.sort()
+print("After sorting:", tasks)
+
+
+# TUPLE TASKS
+print("\n--- Tuple Tasks ---")
+try:
+    fruits[0] = "pineapple"
+except TypeError as e:
+    print("Error:", e)
+    print("Explanation: Tuples are immutable (cannot be changed).")
+
+
+# SET TASKS
+print("\n--- Set Tasks ---")
+unique_numbers.add(6)
+print("After adding:", unique_numbers)
+
+unique_numbers.remove(2)
+print("After removing:", unique_numbers)
+
+print("Explanation: Duplicates are automatically removed in sets.")
+
+
+# DICTIONARY TASKS
+print("\n--- Dictionary Tasks ---")
+student["grade"] = "A"
+student["age"] = 20
+
+print("Updated Student:", student)
+
+print("\nAll keys and values:")
+for key, value in student.items():
+    print(key, ":", value)
